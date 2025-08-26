@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: stg_households
+    description: "Staging model for households data"
+    columns:
+      - name: household_id
+        tests:
+          - not_null
+          - unique
+      - name: gender
+        tests:
+          - accepted_values:
+              values: ['male', 'female']
+
+  - name: dim_households
+    description: "Dimension table for households"
+    columns:
+      - name: household_id
+        tests:
+          - not_null
+          - unique
+
+  - name: fct_household_indicators
+    description: "Fact table summarizing household impact indicators at location level"
+    columns:
+      - name: location
+        tests:
+          - not_null
+      - name: total_households
+        tests:
+          - not_null

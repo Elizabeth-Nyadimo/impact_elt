@@ -1,0 +1,1 @@
+select * from `impact-elt.impact_data.households`limit 10
