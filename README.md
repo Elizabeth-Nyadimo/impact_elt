@@ -1,16 +1,16 @@
 #  Household Socio-Economic Impact Dashboard  
 
-### Turning Data into Insights for Policy and Community Development  
+### Transforming Raw Survey Data into Insights for **Monitoring & Evaluation (M&E)** and **Community Development**  
 
 ---
 
 ##  Dashboard Screenshot  
-![Dashboard Screenshot](Household%20Socio-Economic%20Impact%20Screenshort.png)  
+![Household Socio-Economic Impact Dashboard](Household%20Socio-Economic%20Impact%20Screenshort.png)  
 
 ---
 
-## Pipeline Workflow Screenshot  
-![Pipeline Screenshot](household%20indicators%20fct.png)  
+## 🔄 Pipeline Workflow Screenshot  
+![Pipeline Workflow](household%20indicators%20fct.png)  
 
 ---
 
@@ -19,64 +19,71 @@
 
 ---
 
-## Project Overview  
-This project demonstrates how raw NGO household survey data can be transformed into actionable insights for **policy and community development** using a modern **SQL + ELT data pipeline** powered by **BigQuery, dbt,** and **Power BI**. Key insights include:  
+##  Project Overview  
+This project demonstrates how **NGO household survey data** can be transformed into actionable insights for **policy, impact evaluation, and program monitoring**.  
 
-- Household demographics (age, gender, education)  
-- Employment and income distribution across regions  
-- Dependency ratios and socio-economic indicators  
+Using a **modern data stack** — **SQL (BigQuery)**, **dbt (Data Build Tool)**, and **Power BI** — this end-to-end pipeline enables organizations to:  
 
----
-
-##  Tech Stack  
-- **BigQuery (SQL):** Raw data ingestion and querying  
-- **dbt (Data Build Tool):** Modular and reusable transformation models  
-- **Power BI:** Interactive dashboarding and data storytelling  
+- Track **household demographics** (age, gender, education)  
+- Evaluate **income distribution and employment trends**  
+- Monitor **dependency ratios** as a socio-economic pressure indicator  
+- Support **evidence-based decision making** in development programs  
 
 ---
 
-## Pipeline Workflow  
+## ⚙️ Tech Stack  
+- **BigQuery (SQL):** Data ingestion, relational queries, and aggregation  
+- **dbt (Data Build Tool):** Modular, reusable ELT transformations with testing  
+- **Power BI:** Interactive dashboarding, data visualization, and storytelling  
+- **Data Governance:** Built-in data quality checks for accuracy and consistency  
 
-1. **Data Ingestion (BigQuery)**  
-   - Imported raw NGO survey data (household, gender, education, income, livelihood variables).  
+---
 
-2. **Transformation (dbt)**  
-   - Built staging + mart models for:  
+## 🔧 Pipeline Workflow  
+
+1. **Data Ingestion – BigQuery**  
+   - Loaded **multi-household survey datasets** (demographics, gender, education, livelihoods, and income variables).  
+
+2. **Transformation – dbt**  
+   - Created **staging and mart models** for:  
      - Household demographics  
      - Education vs. employment segmentation  
-     - Income distribution by location  
-   - Applied **data quality tests** for nulls, duplicates, and consistency checks.  
+     - Regional income distribution  
+   - Applied **data quality assurance**: null checks, duplicate handling, referential integrity.  
 
-3. **Visualization (Power BI)**  
-   - Designed the **Household Socio-Economic Impact Dashboard** featuring:  
-     - Total households, average age, income, and dependency ratio  
-     - Income distribution by urban/suburban/rural areas  
-     - Employment segmentation by education level  
-   - Interactive filters: **location, gender, education level,** and **employment status**.  
+3. **Visualization – Power BI**  
+   - Designed the **Household Socio-Economic Impact Dashboard**:  
+     - KPIs: total households, average age, income, dependency ratio  
+     - Disaggregated analysis by **gender, education, employment, location**  
+     - Drill-down filters for **intersectional insights**  
 
 ---
 
 ##  Key Insights  
-- **Urban households** dominate income (~5.3 bn reported).  
-- **Education level** strongly correlates with full-time employment.  
-- **Dependency ratio** of ~0.94 indicates substantial economic pressure on working-age populations.  
+- **Urban households** contributed the highest reported income (~5.3B).  
+- **Education level** was strongly associated with full-time employment outcomes.  
+- **Dependency ratio (~0.94)** revealed significant economic pressure on working-age members.  
+- **Gender disparities** highlighted gaps in employment participation across regions.  
 
 ---
 
-## 🔑 Highlights  
-- Full **end-to-end ELT pipeline**: raw data → dbt models → Power BI dashboard  
-- Reusable, clean, and well-tested **dbt models**  
-- **Automated refresh** setup ensures dashboards are always up-to-date  
-- Integrated **data quality checks** ensure accurate insights  
+##  Highlights  
+- End-to-end **NGO data pipeline**: raw survey → dbt transformations → dashboard  
+- **SQL + dbt** workflows for scalable, modular ELT  
+- **Monitoring & Evaluation (M&E) indicators** embedded for programmatic reporting  
+- **Power BI storytelling** for both technical and non-technical stakeholders  
+- **Automated refresh & reproducibility** for sustainability  
+- **Data governance practices** (tests, documentation, validation) for integrity  
 
 ---
 
 ## 📂 Repository Structure  
-├── data/
-├── models/
-│ ├── staging/
-│ ├── marts/
-├── dashboard/ # Power BI files
+impact_elt/
+├── data/ # Raw survey dataset
+├── models/ # dbt models
+│ ├── staging/ # Staging transformations
+│ └── marts/ # Final analysis-ready models
+├── dashboard/ # Power BI dashboard files
 ├── Household Socio-Economic Impact Screenshort.png
 ├── Household Socio-Economic Impact dashboard vedio.mp4
 ├── household indicators fct.png
@@ -87,5 +94,9 @@ This project demonstrates how raw NGO household survey data can be transformed i
 
 ---
 
-
-> *This project reflects my ability to transform raw survey data into scalable, policy-relevant visual insights using the modern data stack (BigQuery, dbt, Power BI).*  
+##
+This project demonstrates my ability to:  
+- Design **SQL + dbt ELT pipelines** for impact evaluation and NGO survey data  
+- Build **Power BI dashboards** for policy-relevant Monitoring & Evaluation insights  
+- Apply **data governance and quality assurance** for trustworthy analytics  
+- Translate complex survey datasets into **evidence-based decision making tools**  
